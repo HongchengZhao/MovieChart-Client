@@ -1,0 +1,28 @@
+{
+  "name": "moviecharts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "pomevak",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "apollo-boost": "^0.3.1",
+    "graphql": "^14.3.0",
+    "next": "^8.0.4",
+    "node-fetch": "^2.5.0",
+    "prop-types": "^15.7.2",
+    "rc-pagination": "^1.18.0",
+    "react": "^16.8.6",
+    "react-apollo": "^2.5.5",
+    "react-dom": "^16.8.6",
+    "react-loading-skeleton": "^1.1.1"
+  }
+}
