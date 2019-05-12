@@ -1,7 +1,7 @@
 import {
     withStyles, Card, CardContent, Typography
 } from "@material-ui/core";
-import Skeleton from 'react-loading-skeleton';
+import Skeleton from './Skeleton';
 
 
 const MovieSkeleton = (props) => {
