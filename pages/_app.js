@@ -20,15 +20,20 @@ class MyApp extends App {
                     <Component {...pageProps} />
                     <style global jsx>{`
                     html, body {
+                        min-height: 100vh;
+                        height: 100%;
                         margin: 0;
                         padding: 0;
+                        overflow: scroll;
                     }
                     body {
-                        min-height: 100vh;
                         transition: all 500ms ease-out;
                     }
                     body>div{
                         min-height: 100vh;
+                        box-sizing: border-box;
+                        position: relative;
+                        padding-bottom: 100px;
                     }
                 `}</style>
                 </ApolloProvider>

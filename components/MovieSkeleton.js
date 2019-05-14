@@ -72,28 +72,15 @@ const styles = {
             display: 'block',
             lineHeight: '150%',
         },
-        '&>p>span:first-child': {
-            color: '#666'
-        }
     },
     title: {
-        fontWeight: 'bold',
-        color: '#494949',
         fontSize: 26,
         margin: '10px 0 15px 0',
-        '&>span': {
-            color: '#888'
-        }
     },
     summary: {
-        textAlign: 'justify',
-        textIndent: '2em',
-        wordBreak: 'break-all',
         lineHeight: '150%'
     },
     subtitle: {
-        fontWeight: 'normal',
-        color: '#007722',
         fontSize: 16
     },
     rating: {
@@ -107,20 +94,7 @@ const styles = {
         display: 'flex',
         alignItems: 'center',
         whiteSpace: 'nowrap',
-        margin: '10px 0',
-        '& strong': {
-            color: '#494949',
-            fontSize: 28,
-            fontStyle: 'normal',
-            fontWeight: 'normal'
-        },
-        '& svg': {
-            verticalAlign: 'bottom'
-        },
-        '&>div': {
-            padding: '10px 0 10px 5px',
-            color: '#37a'
-        }
+        margin: '10px 0'
     },
     stars: {
         color: '#9B9B9B',

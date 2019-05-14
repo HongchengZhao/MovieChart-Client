@@ -2,7 +2,7 @@ import React from 'react';
 import { object } from 'prop-types';
 import Router from 'next/router';
 import Link from 'next/link';
-import { AppBar, IconButton, InputBase, withStyles } from '@material-ui/core';
+import { AppBar, IconButton, InputBase, withStyles, BottomNavigation } from '@material-ui/core';
 import { fade } from '@material-ui/core/styles/colorManipulator';
 import SearchIcon from '@material-ui/icons/Search';
 import HomeIcon from '@material-ui/icons/Home';
@@ -13,15 +13,9 @@ class DefaultLayout extends React.Component {
         this.state = {
             keyword: ''
         };
-        this.getInput = this.getInput.bind(this);
-    }
-
-    getInput() {
-        return this.input.value.trim();
     }
 
     search = () => {
-        //const keyword = this.getInput();
         const { keyword } = this.state;
         keyword !== '' && Router.push(`/result?keyword=${keyword}`)
     }
@@ -33,7 +27,7 @@ class DefaultLayout extends React.Component {
     render() {
         const { classes, children, defaultValue = '' } = this.props;
         return (
-            <div>
+            <>
                 <AppBar classes={{ root: classes.root }}>
                     <Link href={`/`}>
                         <IconButton classes={{ root: classes.iconButton }}>
@@ -56,7 +50,10 @@ class DefaultLayout extends React.Component {
                     </IconButton>
                 </AppBar>
                 {children}
-            </div>
+                <footer className={classes.footer}>
+                    <p>1652738 赵洪城</p>
+                </footer>
+            </>
         );
     }
 }
@@ -88,6 +85,20 @@ const styles = {
     },
     iconButton: {
         padding: 10,
+    },
+    footer: {
+        position: 'absolute',
+        bottom: 0,
+        width: '100%',
+        height: '100px',
+        textAlign: 'center',
+        background: '#eff3f5',
+        borderTop: '1px solid #e5ebe4',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        color: '#999',
+        fontFamily: 'monospace',
     }
 };
 

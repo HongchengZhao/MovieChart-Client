@@ -47,7 +47,7 @@ class MovieChart extends React.Component {
 
     changPage = (cur) => {
         Router.push(`/?page=${cur}`);
-        window.scrollTo(0, 0);
+        document.body.scrollTo(0, 0);
     };
 
     render() {

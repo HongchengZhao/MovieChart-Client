@@ -29,29 +29,15 @@ const MovieItemSkeleton = (props) => {
 
 const styles = {
     listItemRoot: {
-
         alignItems: 'flex-start'
     },
     overflowEllipsis: {
+        flex: 100,
         overflow: 'hidden',
-        width: 'calc(100% - 110px)',
         padding: '0 10px'
     },
     title: {
-        font: '14px Arial, Helvetica, sans-serif',
-        '&:link': {
-            color: '#37a',
-            textDecoration: 'none',
-        },
-        '&:hover': {
-            textDecoration: 'underline #37a'
-        },
-        '&:visited': {
-            color: '#669'
-        },
-        '&:visited:hover': {
-            textDecoration: 'underline #669'
-        }
+        font: '14px Arial, Helvetica, sans-serif'
     },
     posterRoot: {
         width: 75,
@@ -78,9 +64,6 @@ const styles = {
         '&>span:nth-of-type(2)': {
             margin: '0 3px',
             color: '#ffab2d'
-        },
-        '& svg': {
-            verticalAlign: 'bottom'
         }
     }
 };
